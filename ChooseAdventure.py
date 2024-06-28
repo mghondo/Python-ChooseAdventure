@@ -26,7 +26,7 @@ print("""
 
 import time
 
-print("Hey, hun! This is game number two. You'll be playing with Patch.")
+print("Hey, there! This is a 'choose your own adventure game.'Patch You'll be playing with Patch.")
 print("\nHere's the story, you're on an adventure. You have your trusty dog with you, select the name.")
 
 name = input("Enter your dog's name: ")
@@ -55,7 +55,7 @@ if choice == "1":
     time.sleep(2)
     print('Game Over. Next time let Patch sick the dog.')
 elif choice == "2":
-    print(f"That's the spirit. {name} knows how to get a snake and make it his bitch.")
+    print(f"That's the spirit. {name} knows how to get a snake and make it pay.")
     print("Nice, way to be bold. You kill the snake and were able to absorb its life force.")
 else:
     print("Invalid choice. Game over anyway.")
