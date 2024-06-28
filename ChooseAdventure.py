@@ -24,7 +24,9 @@ print("""
   VK/a:f         _,. -'''         `-.                         
 """)
 
-print("Hey, hun! This is game number two. You'll be playing by making choices.")
+import time
+
+print("Hey, hun! This is game number two. You'll be playing with Patch.")
 print("\nHere's the story, you're on an adventure. You have your trusty dog with you, select the name.")
 
 name = input("Enter your dog's name: ")
@@ -41,15 +43,19 @@ print(f"Oh wow {badGuy} sounds like a real bad apple. Let's see what happens.")
 if badGuy.lower() == "biden":
     print("And of course Biden is the bad guy.")
 
-print(f"\nYou're in a dark and haunted forest. You hear animals and critters. Luckily you have your trusty pup {name} by your side.")
+print(f"\nYou're in a dark and haunted forest. You hear animals and critters. Lucking you have your trusty pup {name} by your side.")
 
 choice = input(f"\nYou see a snake, do you 1. Run or 2. Sick {name} on the snake? ")
 
 if choice == "1":
-    print("Why Run you have a tough dog.")
+    print("You run as fast as you can and arrive at a river.")
+    print("Suddenly an evil being appears out of the water.")
+    print(f"I am the evil {badGuy}. You are trespassing in my territory.")
+    
+    time.sleep(2)
+    print('Game Over. Next time let Patch sick the dog.')
 elif choice == "2":
     print(f"That's the spirit. {name} knows how to get a snake and make it his bitch.")
+    print("Nice, way to be bold. You kill the snake and were able to absorb its life force.")
 else:
     print("Invalid choice. Game over anyway.")
-
-print("\nGame Over.")
